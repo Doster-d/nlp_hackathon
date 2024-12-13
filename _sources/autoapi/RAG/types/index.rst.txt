@@ -1,0 +1,70 @@
+RAG.types
+=========
+
+.. py:module:: RAG.types
+
+.. autoapi-nested-parse::
+
+   Type definitions for the LLaMA RAG system.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   RAG.types.TableRow
+   RAG.types.TableData
+   RAG.types.RawTableList
+   RAG.types.TableExtractionResult
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   RAG.types.TableList
+   RAG.types.DocumentData
+
+
+Module Contents
+---------------
+
+.. py:data:: TableRow
+
+.. py:data:: TableData
+
+.. py:data:: RawTableList
+
+.. py:class:: TableList
+
+   Bases: :py:obj:`List`\ [\ :py:obj:`List`\ [\ :py:obj:`List`\ [\ :py:obj:`str`\ ]\ ]\ ]
+
+
+   Type for table data structure.
+
+
+.. py:data:: TableExtractionResult
+
+.. py:class:: DocumentData
+
+   Bases: :py:obj:`TypedDict`
+
+
+   Structure for document data.
+
+
+   .. py:attribute:: paragraphs
+      :type:  List[str]
+
+
+   .. py:attribute:: tables
+      :type:  TableList
+
+
+   .. py:attribute:: dataframes
+      :type:  List[pandas.DataFrame]
+
+
